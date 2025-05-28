@@ -1,0 +1,10 @@
+{
+  "name": "Dark Matter",
+  "author": "Quattr0",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Tema dark con look futuristico HUD con colori ciano, rosso e nero per un'esperienza immersiva.",
+  "authorUrl": "https://github.com/4Quattr0",
+  "isDark": true,
+  "cssUrl": "theme.css"
+}

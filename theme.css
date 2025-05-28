@@ -1,0 +1,142 @@
+
+/* Variabili colori base */
+body {
+  --background-primary: #0d1117;
+  --background-secondary: #161b22;
+  --background-modifier-hover: #21262d;
+  --text-normal: #00e1ff;
+  --bold-color: #dbbe00;
+  --text-muted: #007a99;
+  --text-accent: #ffee00;
+  --text-accent-hover: #ffee80;
+  --accent-color: #00e1ff;
+  --code-background: #0e1a1f;
+  --code-normal: #00ffc8;
+  --h1-color: #00e1ff;
+  --h2-color: #00b3cc;
+  --h3-color: #0090a8;
+}
+
+/* Font */
+body, .cm-s-obsidian, .markdown-preview-view {
+  font-family: 'Segoe UI', 'Roboto Mono', 'Consolas', monospace;
+}
+
+/* Titoli */
+.markdown-preview-view h1 {
+  color: var(--h1-color);
+  border-bottom: 2px solid var(--text-accent);
+  padding-bottom: 6px;
+}
+.markdown-preview-view h2 {
+  color: var(--h2-color);
+  border-left: 3px solid var(--text-accent);
+  padding-left: 8px;
+}
+.markdown-preview-view h3 {
+  color: var(--h3-color);
+  text-transform: uppercase;
+}
+
+/* Link */
+.markdown-preview-view a {
+  color: var(--text-accent);
+}
+.markdown-preview-view a:hover {
+  color: var(--text-accent-hover);
+  text-shadow: 0 0 5px var(--text-accent-hover);
+}
+
+/* Evidenziazione */
+.markdown-preview-view mark {
+  background-color: #ffee0065;
+  color: var(--text-accent);
+  padding: 2px 4px;
+}
+
+/* Codice inline */
+.cm-s-obsidian span.cm-inline-code,
+.markdown-preview-view code {
+  background-color: var(--code-background);
+  color: var(--code-normal);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Blocchi di codice */
+.markdown-preview-view pre code {
+  background-color: #111c22;
+  padding: 12px;
+  border: 1px solid #00e1ff30;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Checkbox */
+.markdown-preview-view input[type="checkbox"] {
+  accent-color: var(--text-accent);
+}
+
+/* Bordo note */
+.markdown-preview-view {
+  border-left: 4px solid var(--text-accent);
+  padding-left: 12px;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+/* Barra superiore e tabs */
+.workspace, .workspace-split, .workspace-tabs, .workspace-tab-header-container, .workspace-tab-header, .workspace-tab-header-inner {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal);
+  border: none;
+}
+
+/* Tab attiva */
+.workspace-tab-header.is-active {
+  background-color: var(--background-secondary);
+  
+  border-bottom: 2px solid var(--text-accent);
+  color: var(--text-normal);
+}
+
+/* Tab inattiva */
+.workspace-tab-header {
+  background-color: var(--background-primary);
+  color: var(--text-muted);
+}
+
+/* Hover sui tab */
+.workspace-tab-header-inner:hover,
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  color: var(--text-accent-hover);
+}
+
+/* Rimozione o attenuazione dei bordi/divisori interni */
+.workspace-split.mod-horizontal > *:not(:last-child),
+.workspace-split.mod-vertical > *:not(:last-child),
+.horizontal-resize-handle,
+.vertical-resize-handle,
+.workspace-leaf-resize-handle,
+.workspace-tab-header::after,
+.workspace-tab-header-container::after {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Riduci contrasto dei pannelli laterali */
+.side-dock.mod-left,
+.side-dock.mod-right {
+  border: none;
+  background-color: var(--background-secondary);
+}
+
+/* Barra titolo (titoli, icone) */
+.titlebar, .titlebar-inner {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal);
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
